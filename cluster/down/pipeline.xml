@@ -1,0 +1,7 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="reverseProxyId" type="java.lang.String"/>
+        <structure definition="be.nabu.eai.module.http.reverse.proxy.PlannedDowntime" minOccurs="0" name="plan"/>
+    </structure>
+    <structure name="output"/>
+</structure>

@@ -1,0 +1,29 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="6dd919f1-8822-4bc6-9edc-5dbc5802bd30">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="2725d50f-9d5b-4566-8aef-c6ffbece5c14">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="dbf5e9d8-91af-41c3-9edd-c12466b20013"
+				serviceId="nabu.protocols.http.reverseProxy.Services.up"
+				resultName="resultae9f4695879642e5b1c94f1dffd95e93"
+				temporaryMapping="true"
+				x="75"
+				y="63"
+				invocationOrder="0"
+				target="$all"
+				asynchronous="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="c9d2445f-c604-4093-a203-873acd0edbfc"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/reverseProxyId</from>
+				<to>reverseProxyId</to>
+			</steps>
+		</steps>
+	</steps>
+</sequence>
